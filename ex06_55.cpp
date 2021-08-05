@@ -5,6 +5,10 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+const double Pi = 3.14159;
+
+double circleArea(int r) {return Pi * r *r;};
+
 int main()
 {
    int radius = 1;
@@ -14,7 +18,7 @@ int main()
 	   << "(Enter a negative number to exit):\n";
       cin >> radius;
       cout << "The area of a circle with a radius of " 
-	   << radius << " is:" << circleArea(radius) << endl;
+	   << radius << " is: " << circleArea(radius) << endl << endl;
    }
    return 0;
 }
